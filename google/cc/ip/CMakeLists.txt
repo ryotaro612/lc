@@ -1,0 +1,3 @@
+#add_library(unique_email_address STATIC unique_email_addresses.cc)
+
+add_executable(unique_email_address unique_email_addresses.cc)
