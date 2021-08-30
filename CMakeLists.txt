@@ -10,7 +10,8 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 project(lc)
+include(GoogleTest)
+enable_testing()
 add_subdirectory(google)
 
 
-include(GoogleTest)
