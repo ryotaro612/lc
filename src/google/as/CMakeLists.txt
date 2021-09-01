@@ -7,8 +7,3 @@ add_library(rotate_image STATIC rotate_image.cc)
 add_library(jump_game STATIC jump_game.cc)
 add_library(plus_one STATIC plus_one.cc)
 add_library(minimum_window_substring STATIC minimum_window_substring.cc)
-
-add_library(temp STATIC temp.cc)
-add_executable(temp_test temp_test.cc)
-target_link_libraries(temp_test temp gtest_main)
-gtest_discover_tests(temp_test)

@@ -1,0 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/src)
+add_executable(word_squares_test word_squares_test.cc)
+target_link_libraries(word_squares_test word_squares gtest_main)
+gtest_discover_tests(word_squares_test)

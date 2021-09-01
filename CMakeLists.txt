@@ -12,6 +12,5 @@ FetchContent_MakeAvailable(googletest)
 project(lc)
 include(GoogleTest)
 enable_testing()
-add_subdirectory(google)
-
-
+add_subdirectory(src)
+add_subdirectory(test)
