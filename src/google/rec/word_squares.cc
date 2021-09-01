@@ -1,3 +1,4 @@
+#define _GLIBCXX_DEBUG
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,18 +7,26 @@ class Solution {
     vector<vector<string>> wordSquares(vector<string> &words) {
         int size = words[0].size();
         vector<vector<string>> ans;
-        vector<unordered_set<string>> cands(size + 1);
         for(auto word : words) {
+            vector<unordered_set<string>> cands(size);
+            bool ok = true;
             for(int i = 1; i < size; i++) {
+                // cout << word << " " << i << endl;
                 for(string cand : words) {
-                    if(word[i] == cand[i]) {
+                    if(word[i] == cand[0]) {
+                        // cout << i << " " << cand << endl;
                         cands[i].insert(cand);
                     }
                 }
+                if(cands[i].empty()) {
+                    ok = false;
+                    break;
+                }
             }
-
-            vector<string> s = {word};
-            rec(1, size, s, cands, ans);
+            if(ok) {
+                vector<string> s = {word};
+                rec(1, size, s, cands, ans);
+            }
         }
         return ans;
     }
@@ -25,20 +34,30 @@ class Solution {
     void rec(int index, int size, vector<string> s,
              vector<unordered_set<string>> cands, vector<vector<string>> &ans) {
         if(index == size) {
-            ans.push_back(s);
+            if((int)s.size() == size)
+                ans.push_back(s);
             return;
         }
-        vector<unordered_set<string>> next_cands(size);
         for(string word : cands[index]) {
+            vector<unordered_set<string>> next_cands(size);
+            vector<string> next_s(s);
+            bool ok = true;
             for(int i = index + 1; i < size; i++) {
                 for(auto cand : cands[i]) {
-                    if(word[i] == cand[i]) {
+                    if(word[i] == cand[index]) {
                         next_cands[i].insert(cand);
                     }
                 }
+                if(next_cands[i].empty()) {
+                    ok = false;
+                    break;
+                }
             }
-            s.push_back(word);
-            rec(index+1, size, s, next_cands, ans);
+            next_s.push_back(word);
+
+            if(ok) {
+                rec(index + 1, size, next_s, next_cands, ans);
+            }
         }
     }
 };
