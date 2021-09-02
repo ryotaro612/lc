@@ -1,0 +1,1 @@
+add_library(median_of_two_sorted_arrays STATIC median_of_two_sorted_arrays.cc)

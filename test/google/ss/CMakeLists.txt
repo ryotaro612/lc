@@ -1,0 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/src)
+add_executable(median_of_two_sorted_arrays_test median_of_two_sorted_arrays_test.cc)
+target_link_libraries(median_of_two_sorted_arrays_test median_of_two_sorted_arrays gtest_main)
+gtest_discover_tests(median_of_two_sorted_arrays_test)
