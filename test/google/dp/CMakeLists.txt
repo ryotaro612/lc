@@ -1,0 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/src)
+add_executable(longest_palindromic_substring_test longest_palindromic_substring_test.cc)
+target_link_libraries(longest_palindromic_substring_test longest_palindromic_substring gtest_main)
+gtest_discover_tests(longest_palindromic_substring_test)

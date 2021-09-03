@@ -1,0 +1,2 @@
+
+add_library(longest_palindromic_substring STATIC longest_palindromic_substring.cc)

@@ -1,6 +1,3 @@
-#add_library(unique_email_address STATIC unique_email_addresses.cc)
-
-
 add_library(unique_email_address STATIC unique_email_addresses.cc)
 add_library(odd_event_jump STATIC odd_event_jump.cc)
 add_library(license_key_formatting STATIC license_key_formatting.cc)
