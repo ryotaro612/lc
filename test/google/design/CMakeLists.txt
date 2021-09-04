@@ -1,0 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/src)
+add_executable(lru_cache_test lru_cache_test.cc)
+target_link_libraries(lru_cache_test lru_cache gtest_main)
+gtest_discover_tests(lru_cache_test)
