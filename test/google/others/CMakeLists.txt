@@ -1,0 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/src)
+add_executable(reverse_integer_test reverse_integer.cc)
+target_link_libraries(reverse_integer_test reverse_integer gtest_main)
+gtest_discover_tests(reverse_integer_test)

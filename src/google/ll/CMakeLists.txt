@@ -1,1 +1,1 @@
-add_library(add_two_numbers STATIC add_two_numbers.cc)
+add_library(add_two_numbers add_two_numbers.cc)
