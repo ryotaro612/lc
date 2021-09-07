@@ -1,5 +1,6 @@
 add_subdirectory(rec)
 add_subdirectory(ss)
 add_subdirectory(dp)
+add_subdirectory(tg)
 add_subdirectory(design)
 add_subdirectory(others)

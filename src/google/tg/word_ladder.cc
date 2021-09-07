@@ -5,18 +5,20 @@ class Solution {
   public:
     int ladderLength(string beginWord, string endWord,
                      vector<string> &wordList) {
-
-        unordered_map<string, int> mp;
-        int n = wordList.size() + 1;
         unordered_set<string> words;
         words.insert(beginWord);
+        unordered_map<string, int> mp;
         mp[beginWord] = 0;
-        for(int i = 0; i < (int)wordList.size(); i++) {
-            mp[wordList[i]] = i + 1;
+        for(int i = 0, j = 1; i < (int)wordList.size(); i++) {
             words.insert(wordList[i]);
+            if(wordList[i] != beginWord)
+                mp[wordList[i]] = j++;
         }
+        if(words.find(endWord) == words.end())
+            return 0;
 
-        vector<vector<int>> g(n);
+        int n = words.size();
+        vector<unordered_set<int>> g(n);
         for(auto word : words) {
             for(int i = 0; i < (int)word.size(); i++) {
                 for(int j = 0; j < 26; j++) {
@@ -26,8 +28,8 @@ class Solution {
                         continue;
                     auto found = words.find(temp);
                     if(found != words.end()) {
-                        g[mp[word]].push_back(mp[temp]);
-                        g[mp[temp]].push_back(mp[word]);
+                        g[mp[word]].insert(mp[temp]);
+                        g[mp[temp]].insert(mp[word]);
                     }
                 }
             }
@@ -42,17 +44,18 @@ class Solution {
             pair<int, int> p = que.front();
             que.pop();
 
-            if(d[p.second] <= p.first)
+            if(d[p.second] < p.first)
                 continue;
-            for(int i = 0; i < g[p.second].size(); i++) {
-                int node = g[p.second][i];
-                d[node] = d[p.second] + 1;
-                que.push({d[node], node});
+            for(auto node : g[p.second]) {
+                if(d[node] > d[p.second] + 1) {
+                    d[node] = d[p.second] + 1;
+                    que.push({d[node], node});
+                }
             }
         }
         if(d[mp[endWord]] == inf) {
             return 0;
         } else
-            return d[mp[endWord]];
+            return d[mp[endWord]] + 1;
     }
 };
