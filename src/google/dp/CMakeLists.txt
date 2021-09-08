@@ -1,2 +1,2 @@
-
-add_library(longest_palindromic_substring STATIC longest_palindromic_substring.cc)
+add_library(longest_palindromic_substring longest_palindromic_substring.cc)
+add_library(maximum_subarray maximum_subarray.cc)
