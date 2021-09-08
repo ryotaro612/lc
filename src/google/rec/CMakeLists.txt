@@ -1,1 +1,2 @@
-add_library(word_squares STATIC word_squares.cc)
+add_library(word_squares word_squares.cc)
+add_library(strobogrammatic_number2 strobogrammatic_number2.cc)

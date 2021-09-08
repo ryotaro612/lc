@@ -1,4 +1,9 @@
 include_directories(${PROJECT_SOURCE_DIR}/src)
+
 add_executable(word_squares_test word_squares_test.cc)
 target_link_libraries(word_squares_test word_squares gtest_main)
 gtest_discover_tests(word_squares_test)
+
+add_executable(strobogrammatic_number2_test strobogrammatic_number2.cc)
+target_link_libraries(strobogrammatic_number2_test word_squares gtest_main)
+gtest_discover_tests(strobogrammatic_number2_test)
