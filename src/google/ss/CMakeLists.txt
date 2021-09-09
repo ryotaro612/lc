@@ -1,2 +1,3 @@
 add_library(median_of_two_sorted_arrays median_of_two_sorted_arrays.cc)
 add_library(find_first_and_last_position_of_element_in_sorted_array find_first_and_last_position_of_element_in_sorted_array.cc)
+add_library(merge_intervals merge_intervals.cc)
