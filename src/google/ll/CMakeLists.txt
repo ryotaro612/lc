@@ -1,1 +1,2 @@
 add_library(add_two_numbers add_two_numbers.cc)
+add_library(remove_nth_node_from_end_of_list remove_nth_node_from_end_of_list.cc)
