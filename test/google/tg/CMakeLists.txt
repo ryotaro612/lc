@@ -8,4 +8,7 @@ add_executable(number_of_islands_test number_of_islands.cc)
 target_link_libraries(number_of_islands_test number_of_islands gtest_main)
 gtest_discover_tests(number_of_islands_test)
 
+add_executable(course_schedule2_test course_schedule2.cc)
+target_link_libraries(course_schedule2_test course_schedule2 gtest_main)
+gtest_discover_tests(course_schedule2_test)
 
