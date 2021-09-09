@@ -1,4 +1,11 @@
 include_directories(${PROJECT_SOURCE_DIR}/src)
+
 add_executable(word_ladder_test word_ladder.cc)
 target_link_libraries(word_ladder_test word_ladder gtest_main)
 gtest_discover_tests(word_ladder_test)
+
+add_executable(number_of_islands_test number_of_islands.cc)
+target_link_libraries(number_of_islands_test number_of_islands gtest_main)
+gtest_discover_tests(number_of_islands_test)
+
+

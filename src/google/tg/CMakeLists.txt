@@ -1,2 +1,3 @@
 add_library(binary_tree_maximum_path_sum binary_tree_maximum_path_sum.cc)
 add_library(word_ladder word_ladder.cc)
+add_library(number_of_islands number_of_islands.cc)
