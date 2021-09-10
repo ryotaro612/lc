@@ -12,3 +12,6 @@ add_executable(course_schedule2_test course_schedule2.cc)
 target_link_libraries(course_schedule2_test course_schedule2 gtest_main)
 gtest_discover_tests(course_schedule2_test)
 
+add_executable(count_complete_tree_nodes_test count_complete_tree_nodes.cc)
+target_link_libraries(count_complete_tree_nodes_test count_complete_tree_nodes gtest_main)
+gtest_discover_tests(count_complete_tree_nodes_test)
