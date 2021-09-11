@@ -9,3 +9,6 @@ add_executable(strobogrammatic_number_test strobogrammatic_number.cc)
 target_link_libraries(strobogrammatic_number_test strobogrammatic_number gtest_main)
 gtest_discover_tests(strobogrammatic_number_test)
 
+add_executable(bulls_and_cows_test bulls_and_cows.cc)
+target_link_libraries(bulls_and_cows_test bulls_and_cows gtest_main)
+gtest_discover_tests(bulls_and_cows_test)
