@@ -1,2 +1,3 @@
 add_library(longest_palindromic_substring longest_palindromic_substring.cc)
 add_library(maximum_subarray maximum_subarray.cc)
+add_library(best_time_to_buy_and_sell_stock best_time_to_buy_and_sell_stock.cc)
