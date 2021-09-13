@@ -3,29 +3,29 @@ using namespace std;
 
 class MinStack {
   public:
-    stack<pair<int, int>> stack;
+    stack<pair<int, int>> stk;
     /** initialize your data structure here. */
     MinStack() {}
 
     void push(int val) {
-        if(stack.size() == 0) {
-            stack.push({val, val});
+        if(stk.size() == 0) {
+            stk.push({val, val});
 			return;
 		}
 		
-		stack.push({val, min(val, getMin())});
+		stk.push({val, min(val, getMin())});
     }
 
     void pop() {
-		stack.pop();
+		stk.pop();
 	}
 
     int top() {
-		return stack.top().first;
+		return stk.top().first;
 	}
 
     int getMin() {
-		return stack.top().second;
+		return stk.top().second;
 	}
 };
 

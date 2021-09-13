@@ -2,3 +2,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 add_executable(lru_cache_test lru_cache_test.cc)
 target_link_libraries(lru_cache_test lru_cache gtest_main)
 gtest_discover_tests(lru_cache_test)
+
+add_executable(serialize_and_deserialize_binary_tree_test serialize_and_deserialize_binary_tree.cc)
+target_link_libraries(serialize_and_deserialize_binary_tree_test serialize_and_deserialize_binary_tree gtest_main)
+gtest_discover_tests(serialize_and_deserialize_binary_tree_test)
