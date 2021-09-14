@@ -1,3 +1,4 @@
+add_subdirectory(as)
 add_subdirectory(rec)
 add_subdirectory(ss)
 add_subdirectory(dp)
