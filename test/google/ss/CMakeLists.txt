@@ -12,3 +12,7 @@ gtest_discover_tests(find_first_and_last_position_of_element_in_sorted_array_tes
 add_executable(merge_intervals_test merge_intervals.cc)
 target_link_libraries(merge_intervals_test merge_intervals gtest_main)
 gtest_discover_tests(merge_intervals_test)
+
+add_executable(insert_interval_test insert_interval.cc)
+target_link_libraries(insert_interval_test insert_interval gtest_main)
+gtest_discover_tests(insert_interval_test)
