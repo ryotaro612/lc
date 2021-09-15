@@ -3,3 +3,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 add_executable(missing_ranges_test missing_ranges.cc)
 target_link_libraries(missing_ranges_test missing_ranges gtest_main)
 gtest_discover_tests(missing_ranges_test)
+
+add_executable(next_closest_time_test next_closest_time.cc)
+target_link_libraries(next_closest_time_test next_closest_time gtest_main)
+gtest_discover_tests(next_closest_time_test)
