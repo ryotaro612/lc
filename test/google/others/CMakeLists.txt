@@ -12,3 +12,7 @@ gtest_discover_tests(strobogrammatic_number_test)
 add_executable(bulls_and_cows_test bulls_and_cows.cc)
 target_link_libraries(bulls_and_cows_test bulls_and_cows gtest_main)
 gtest_discover_tests(bulls_and_cows_test)
+
+add_executable(range_sum_query_2d_mutable_test range_sum_query_2d_mutable.cc)
+target_link_libraries(range_sum_query_2d_mutable_test range_sum_query_2d_mutable gtest_main)
+gtest_discover_tests(range_sum_query_2d_mutable_test)
