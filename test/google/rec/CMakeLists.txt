@@ -11,3 +11,7 @@ gtest_discover_tests(strobogrammatic_number2_test)
 add_executable(word_search2_test word_search2.cc)
 target_link_libraries(word_search2_test word_search2 gtest_main)
 gtest_discover_tests(word_search2_test)
+
+add_executable(android_unlock_patterns_test android_unlock_patterns.cc)
+target_link_libraries(android_unlock_patterns_test android_unlock_patterns gtest_main)
+gtest_discover_tests(android_unlock_patterns_test)

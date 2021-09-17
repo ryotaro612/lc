@@ -1,3 +1,4 @@
 add_library(word_squares word_squares.cc)
 add_library(strobogrammatic_number2 strobogrammatic_number2.cc)
 add_library(word_search2 word_search2.cc)
+add_library(android_unlock_patterns android_unlock_patterns.cc)
