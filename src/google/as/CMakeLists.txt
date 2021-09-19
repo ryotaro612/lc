@@ -12,3 +12,4 @@ add_library(longest_substring_with_at_most_two_distinct_characters longest_subst
 add_library(missing_ranges missing_ranges.cc)
 add_library(next_closest_time next_closest_time.cc)
 add_library(expressive_words expressive_words.cc)
+add_library(find_and_replace_in_string find_and_replace_in_string.cc)

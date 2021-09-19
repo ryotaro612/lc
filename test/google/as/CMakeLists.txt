@@ -7,3 +7,7 @@ gtest_discover_tests(missing_ranges_test)
 add_executable(next_closest_time_test next_closest_time.cc)
 target_link_libraries(next_closest_time_test next_closest_time gtest_main)
 gtest_discover_tests(next_closest_time_test)
+
+add_executable(find_and_replace_in_string_test find_and_replace_in_string.cc)
+target_link_libraries(find_and_replace_in_string_test find_and_replace_in_string gtest_main)
+gtest_discover_tests(find_and_replace_in_string_test)
