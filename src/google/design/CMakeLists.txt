@@ -1,3 +1,4 @@
 add_library(lru_cache lru_cache.cc)
 add_library(min_stack min_stack.cc)
 add_library(serialize_and_deserialize_binary_tree serialize_and_deserialize_binary_tree.cc)
+add_library(logger_rate_limiter logger_rate_limiter.cc)
