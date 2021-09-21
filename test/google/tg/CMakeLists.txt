@@ -23,3 +23,7 @@ gtest_discover_tests(longest_increasing_path_in_a_matrix_test)
 add_executable(decode_string_test decode_string.cc)
 target_link_libraries(decode_string_test decode_string gtest_main)
 gtest_discover_tests(decode_string_test)
+
+add_executable(evaluate_division_test evaluate_division.cc)
+target_link_libraries(evaluate_division_test evaluate_division gtest_main)
+gtest_discover_tests(evaluate_division_test)
