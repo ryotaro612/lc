@@ -16,3 +16,7 @@ gtest_discover_tests(bulls_and_cows_test)
 add_executable(range_sum_query_2d_mutable_test range_sum_query_2d_mutable.cc)
 target_link_libraries(range_sum_query_2d_mutable_test range_sum_query_2d_mutable gtest_main)
 gtest_discover_tests(range_sum_query_2d_mutable_test)
+
+add_executable(my_calendar2_test my_calendar2.cc)
+target_link_libraries(my_calendar2_test my_calendar2 gtest_main)
+gtest_discover_tests(my_calendar2_test)
