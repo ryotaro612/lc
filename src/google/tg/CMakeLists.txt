@@ -7,3 +7,4 @@ add_library(longest_increasing_path_in_a_matrix longest_increasing_path_in_a_mat
 add_library(decode_string decode_string.cc)
 add_library(evaluate_division evaluate_division.cc)
 add_library(diameter_of_binary_tree diameter_of_binary_tree.cc)
+add_library(cracking_the_safe cracking_the_safe.cc)

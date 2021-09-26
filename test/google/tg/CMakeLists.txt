@@ -27,3 +27,7 @@ gtest_discover_tests(decode_string_test)
 add_executable(evaluate_division_test evaluate_division.cc)
 target_link_libraries(evaluate_division_test evaluate_division gtest_main)
 gtest_discover_tests(evaluate_division_test)
+
+add_executable(cracking_the_safe_test cracking_the_safe.cc)
+target_link_libraries(cracking_the_safe_test cracking_the_safe gtest_main)
+gtest_discover_tests(cracking_the_safe_test)
