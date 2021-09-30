@@ -3,3 +3,4 @@ add_library(find_first_and_last_position_of_element_in_sorted_array find_first_a
 add_library(merge_intervals merge_intervals.cc)
 add_library(insert_interval insert_interval.cc)
 add_library(valid_anagram valid_anagram.cc)
+add_library(count_of_smaller_numbers_after_self count_of_smaller_numbers_after_self.cc)
