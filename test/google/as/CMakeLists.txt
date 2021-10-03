@@ -11,3 +11,7 @@ gtest_discover_tests(next_closest_time_test)
 add_executable(find_and_replace_in_string_test find_and_replace_in_string.cc)
 target_link_libraries(find_and_replace_in_string_test find_and_replace_in_string gtest_main)
 gtest_discover_tests(find_and_replace_in_string_test)
+
+add_executable(trapping_rain_water_test trapping_rain_water.cc)
+target_link_libraries(trapping_rain_water_test trapping_rain_water gtest_main)
+gtest_discover_tests(trapping_rain_water_test)
