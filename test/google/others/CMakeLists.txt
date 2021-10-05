@@ -20,3 +20,7 @@ gtest_discover_tests(range_sum_query_2d_mutable_test)
 add_executable(my_calendar2_test my_calendar2.cc)
 target_link_libraries(my_calendar2_test my_calendar2 gtest_main)
 gtest_discover_tests(my_calendar2_test)
+
+add_executable(swap_adjacent_in_lr_string_test swap_adjacent_in_lr_string.cc)
+target_link_libraries(swap_adjacent_in_lr_string_test swap_adjacent_in_lr_string gtest_main)
+gtest_discover_tests(swap_adjacent_in_lr_string_test)
