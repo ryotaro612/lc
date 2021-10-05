@@ -1,3 +1,4 @@
 add_library(add_two_numbers add_two_numbers.cc)
 add_library(remove_nth_node_from_end_of_list remove_nth_node_from_end_of_list.cc)
 add_library(merge_two_sorted_lists merge_two_sorted_lists.cc)
+add_library(copy_list_with_random_pointer copy_list_with_random_pointer.cc)
