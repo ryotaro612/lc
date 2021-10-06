@@ -17,3 +17,4 @@ add_library(maximize_distance_to_closest_person maximize_distance_to_closest_per
 add_library(valid_parentheses valid_parentheses.cc)
 add_library(merge_k_sorted_lists merge_k_sorted_lists.cc)
 add_library(trapping_rain_water trapping_rain_water.cc)
+add_library(kth_largest_element_in_an_array kth_largest_element_in_an_array.cc)
