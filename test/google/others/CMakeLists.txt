@@ -24,3 +24,7 @@ gtest_discover_tests(my_calendar2_test)
 add_executable(swap_adjacent_in_lr_string_test swap_adjacent_in_lr_string.cc)
 target_link_libraries(swap_adjacent_in_lr_string_test swap_adjacent_in_lr_string gtest_main)
 gtest_discover_tests(swap_adjacent_in_lr_string_test)
+
+add_executable(guess_the_word_test guess_the_word.cc)
+target_link_libraries(guess_the_word_test guess_the_word gtest_main)
+gtest_discover_tests(guess_the_word_test)
