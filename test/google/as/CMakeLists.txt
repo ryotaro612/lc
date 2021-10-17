@@ -15,3 +15,7 @@ gtest_discover_tests(find_and_replace_in_string_test)
 add_executable(trapping_rain_water_test trapping_rain_water.cc)
 target_link_libraries(trapping_rain_water_test trapping_rain_water gtest_main)
 gtest_discover_tests(trapping_rain_water_test)
+
+add_executable(backspace_string_compare_test backspace_string_compare.cc)
+target_link_libraries(backspace_string_compare_test backspace_string_compare gtest_main)
+gtest_discover_tests(backspace_string_compare_test)

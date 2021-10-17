@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 
+set(CMAKE_CXX_FLAGS "-D=_debug -std=c++14 -Wall -ftrapv")
+
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -15,4 +17,3 @@ include(GoogleTest)
 enable_testing()
 add_subdirectory(src)
 add_subdirectory(test)
-
