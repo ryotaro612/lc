@@ -1,1 +1,2 @@
 add_library(validate_binary_search_tree validate_binary_search_tree.cc)
+add_library(symmetric_tree symmetric_tree.cc)
