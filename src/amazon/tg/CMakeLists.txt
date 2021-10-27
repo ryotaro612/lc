@@ -1,2 +1,3 @@
 add_library(validate_binary_search_tree validate_binary_search_tree.cc)
 add_library(symmetric_tree symmetric_tree.cc)
+add_library(binary_tree_level_order_traversal binary_tree_level_order_traversal.cc)
