@@ -1,0 +1,1 @@
+add_library(partition_labels partition_labels.cc)
