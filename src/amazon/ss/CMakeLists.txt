@@ -1,0 +1,1 @@
+add_library(search_in_rotate_sorted_array search_in_rotate_sorted_array.cc)
