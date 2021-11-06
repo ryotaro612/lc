@@ -1,1 +1,2 @@
 add_library(binary_tree_preorder_traversal binary_tree_preorder_traversal.cc)
+add_library(binary_tree_inorder_traversal binary_tree_inorder_traversal.cc)
