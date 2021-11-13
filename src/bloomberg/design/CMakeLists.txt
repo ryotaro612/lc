@@ -1,0 +1,1 @@
+add_library(moving_average_from_data_stream moving_average_from_data_stream.cc)
