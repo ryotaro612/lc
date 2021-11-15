@@ -1,1 +1,2 @@
 add_library(flatten_binary_tree_to_linked_list flatten_binary_tree_to_linked_list.cc)
+add_library(binary_tree_right_side_view binary_tree_right_side_view.cc)
