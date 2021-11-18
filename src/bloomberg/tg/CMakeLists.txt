@@ -1,3 +1,4 @@
 add_library(flatten_binary_tree_to_linked_list flatten_binary_tree_to_linked_list.cc)
 add_library(binary_tree_right_side_view binary_tree_right_side_view.cc)
 add_library(kth_smallest_element_in_a_bst kth_smallest_element_in_a_bst.cc)
+add_library(alien_dictionary alien_dictionary.cc)
