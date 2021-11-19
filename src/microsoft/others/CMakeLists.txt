@@ -1,0 +1,1 @@
+add_library(single_number single_number.cc)
