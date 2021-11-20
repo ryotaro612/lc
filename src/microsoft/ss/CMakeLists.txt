@@ -1,1 +1,2 @@
 add_library(remove_duplicates_from_sorted_array remove_duplicates_from_sorted_array.cc)
+add_library(sort_colors sort_colors.cc)
