@@ -1,0 +1,1 @@
+add_library(wildcard_matching wildcard_matching.cc)
