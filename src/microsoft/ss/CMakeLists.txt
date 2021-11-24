@@ -1,2 +1,3 @@
 add_library(remove_duplicates_from_sorted_array remove_duplicates_from_sorted_array.cc)
 add_library(sort_colors sort_colors.cc)
+add_library(find_minimum_in_rotated_sorted_array find_minimum_in_rotated_sorted_array.cc)
