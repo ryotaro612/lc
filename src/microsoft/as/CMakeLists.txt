@@ -1,0 +1,1 @@
+add_library(valid_palindrome valid_palindrome.cc)
