@@ -1,0 +1,8 @@
+add_subdirectory(as)
+add_subdirectory(design)
+add_subdirectory(dp)
+add_subdirectory(hqs)
+add_subdirectory(ll)
+add_subdirectory(others)
+add_subdirectory(ss)
+add_subdirectory(tg)

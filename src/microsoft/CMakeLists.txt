@@ -1,0 +1,6 @@
+add_subdirectory(as)
+add_subdirectory(backtracking)
+add_subdirectory(design)
+add_subdirectory(dp)
+add_subdirectory(others)
+add_subdirectory(ss)

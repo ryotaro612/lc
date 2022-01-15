@@ -1,1 +1,5 @@
 add_subdirectory(google)
+add_subdirectory(amazon)
+add_subdirectory(binary_tree)
+add_subdirectory(bloomberg)
+add_subdirectory(microsoft)
