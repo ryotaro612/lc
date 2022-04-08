@@ -1,1 +1,2 @@
 add_library(partition_labels partition_labels.cc)
+add_library(prison_cells_after_n_days prison_cells_after_n_days.cc)
