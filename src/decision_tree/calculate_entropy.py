@@ -10,4 +10,4 @@ class Solution:
         
         for v in counter.values():
             result -= v / n * math.log2(v/n)
-        return result
+        return resultq
