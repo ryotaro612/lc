@@ -1,3 +1,4 @@
+
 class Solution(object):
     def wordsAbbreviation(self, words):
         def abbrev(word, i = 0):
@@ -5,13 +6,13 @@ class Solution(object):
             return word[:i+1] + str(len(word) - i - 2) + word[-1]
 
         N = len(words)
-        ans = map(abbrev, words)
+        ans = [abbrev(word) for word in words]
         prefix = [0] * N
 
-        for i in xrange(N):
+        for i in range(N):
             while True:
                 dupes = set()
-                for j in xrange(i+1, N):
+                for j in range(i+1, N):
                     if ans[i] == ans[j]:
                         dupes.add(j)
 
@@ -21,4 +22,4 @@ class Solution(object):
                     prefix[k] += 1
                     ans[k] = abbrev(words[k], prefix[k])
 
-        return ans
+        return ans    
