@@ -34,4 +34,4 @@ class Solution:
                     lb = mid
                 else:
                     ub = mid
-        
+
