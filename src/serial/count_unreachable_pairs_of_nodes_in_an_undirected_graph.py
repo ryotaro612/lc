@@ -33,4 +33,3 @@ class Solution:
         else:
             par[root_b] += par[root_a]
             par[root_a] = root_b
-    
