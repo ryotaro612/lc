@@ -1,3 +1,15 @@
+import bisect
+class Solution:
+    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+
+        potions.sort()
+        result = []
+        m = len(potions)
+        for spell in spells:
+            i = bisect.bisect_left(potions, success, key=lambda potion: spell * potion)
+            result.append(m - i)
+        return result
+"""
 class Solution:
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
 
@@ -14,3 +26,4 @@ class Solution:
                     lb = mid
             result.append(m - ub)
         return result
+"""
