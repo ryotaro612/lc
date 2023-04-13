@@ -1,0 +1,10 @@
+#+begin_src python :results file
+import matplotlib
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(4,2))
+x=numpy.linspace(-15,15)
+plt.plot(numpy.sin(x)/x)
+fig.tight_layout()
+plt.savefig('./python-matplot-fig.png')
+return './python-matplot-fig.png' # return filename to org-mode
+#+end_src
