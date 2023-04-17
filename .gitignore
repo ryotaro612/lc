@@ -2,3 +2,8 @@ build
 .cache
 \#*
 *~
+ltximg
+__pycache__
+medium.png
+easy.png
+hard.png

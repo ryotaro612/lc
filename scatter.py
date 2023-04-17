@@ -18,7 +18,7 @@ def handle(difficulty):
             x.append(date)
             y.append(time_min)
         mx_attempts = max(attempts)
-    plt.scatter(x, y, c=[a/mx_attempts for a in attempts], cmap='coolwarm')
+    plt.scatter(x, y, c=[a/mx_attempts if mx_attempts else 0 for a in attempts], cmap='coolwarm')
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
     plt.gca().xaxis.set_major_locator(mdates.DayLocator())
     plt.title('Medium difficulty problems session')

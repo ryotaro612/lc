@@ -6,6 +6,13 @@
 #+RESULTS:
 [[file:./medium.png]]
 
+#+begin_src python :var difficulty="Easy" :results file
+  import scatter; return scatter.handle(difficulty)
+#+end_src
+
+#+RESULTS:
+[[file:./easy.png]]
+
 \(x^2\)
 
 
