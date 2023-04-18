@@ -21,7 +21,7 @@ def handle(difficulty):
     plt.scatter(x, y, c=[a/mx_attempts if mx_attempts else 0 for a in attempts], cmap='coolwarm')
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
     plt.gca().xaxis.set_major_locator(mdates.DayLocator())
-    plt.title('Medium difficulty problems session')
+    plt.title(f'{difficulty} problems session')
     plt.xlabel('Date')
     plt.ylabel('Elapsed time (min)')
     plt.savefig(filename := f'./{difficulty.lower()}.png')
