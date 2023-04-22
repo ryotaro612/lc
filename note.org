@@ -13,7 +13,18 @@
 #+RESULTS:
 [[file:./easy.png]]
 
+#+begin_src python :var difficulty="Hard" :results file
+  import scatter; return scatter.handle(difficulty)
+#+end_src
+
+#+RESULTS:
+[[file:./hard.png]]
+
+
+
+
 \(x^2\)
+
 
 
 \[
