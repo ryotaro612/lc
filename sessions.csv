@@ -9,3 +9,4 @@ No,Title,Date,Time,Difficulty,# of unsuccessful attempts,URL
 1312,Minimum Insertion Steps to Make a String Palindrome,2023-04-21,00:13:36,Hard,0,https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
 562,Longest Line of Consecutive One in Matrix,2023-04-24,00:31:17,Medium,1,https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/description/
 2336,Smallest Number in Infinite Set,2023-04-25,00:07:52,Medium,0,https://leetcode.com/problems/smallest-number-in-infinite-set/description/
+792,Number of Matching Subsequences,2023-04-26,01:12:56,Medium,3,https://leetcode.com/problems/number-of-matching-subsequences/description/
