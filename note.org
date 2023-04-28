@@ -1,26 +1,50 @@
 * Note
+
+#+NAME: scatter
 #+begin_src python :var difficulty="Medium" :results file
   import scatter; return scatter.handle(difficulty)
 #+end_src
 
-#+RESULTS:
-[[file:./medium.png]]
-
-#+begin_src python :var difficulty="Easy" :results file
-  import scatter; return scatter.handle(difficulty)
+#+NAME: median
+#+begin_src python :var difficulty="Medium"
+  import median; return median.compute_median(difficulty)
 #+end_src
+
+#+CALL: median("Easy")
+
+#+RESULTS:
+| Median(Elapsed time) |
+|----------------------|
+|                    5 |
+
+#+CALL: scatter("Easy")
 
 #+RESULTS:
 [[file:./easy.png]]
 
-#+begin_src python :var difficulty="Hard" :results file
-  import scatter; return scatter.handle(difficulty)
-#+end_src
+#+CALL: median("Medium")
+
+#+RESULTS:
+| Median(Elapsed time) |
+|----------------------|
+|                   31 |
+
+#+CALL: scatter("Medium")
+
+#+RESULTS:
+[[file:./medium.png]]
+
+#+CALL: median("Hard")
+
+#+RESULTS:
+| Median(Elapsed time) |
+|----------------------|
+|                   13 |
+
+#+CALL: scatter("Hard")
 
 #+RESULTS:
 [[file:./hard.png]]
-
-
 
 
 \(x^2\)
@@ -30,15 +54,3 @@
 \[
 x_2
 \]
-| A | B | c  |
-|---+---+----|
-| 1 | 2 | aa |
-| 1 | 2 | aa |
-| 1 | 2 | aa |
-
-|---+---------------------+--------|
-|   | <6>                 |        |
-| 1 | one                 | some   |
-| 2 | two                 | boring |
-| 3 | This is a long text | column |
-|---+---------------------+--------|
