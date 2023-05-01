@@ -15,7 +15,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|                    5 |
+|                    4 |
 
 #+CALL: scatter("Easy")
 
