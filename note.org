@@ -15,7 +15,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|                    4 |
+|                    3 |
 
 #+CALL: scatter("Easy")
 
@@ -27,7 +27,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|                   30 |
+|                   29 |
 
 #+CALL: scatter("Medium")
 
