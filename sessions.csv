@@ -21,3 +21,4 @@ No,Title,Date,Time,Difficulty,# of unsuccessful attempts,URL
 1456,Maximum Number of Vowels in a Substring of Given Length,2023-05-05,00:10:28,Medium,1,https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/
 1498,Number of Subsequences That satisfy the given Sum Condition,2023-05-06,00:58:06,Medium,1,https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
 274,H-Index,2023-05-07,00:27:39,Medium,2,https://leetcode.com/problems/h-index/submissions/?envType=study-plan-v2&id=top-interview-150
+1572,Matrix Diagonal Sum,2023-05-07,00:05:07,Easy,0,https://leetcode.com/problems/matrix-diagonal-sum/description/ 
