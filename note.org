@@ -27,7 +27,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:29:01 |
+|             00:27:39 |
 
 #+CALL: scatter("Medium")
 
