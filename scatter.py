@@ -30,9 +30,10 @@ def handle(difficulty):
         cmap="coolwarm",
     )
     fig.gca().xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
-    fig.gca().xaxis.set_major_locator(mdates.DayLocator())
-    ax.set_title(f"{difficulty} problems session")
     fig.autofmt_xdate()
+    # fig.gca().xaxis.set_major_locator(mdates.DayLocator())
+    ax.set_title(f"{difficulty} problems session")
+
     ax.set_xlabel("Date")
     ax.set_ylabel("Elapsed time (min)")
     fig.savefig(filename := f"./{difficulty.lower()}.png")
