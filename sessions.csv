@@ -35,3 +35,4 @@ No,Title,Date,Time,Difficulty,# of unsuccessful attempts,URL
 1657,Detetmine if Two Strings Are Close,2023-05-21,00:10:01,Medium,0,https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&id=leetcode-75
 2095,Delete the Middle Node of a Linked List,2023-05-22,00:05:10,Medium,0,https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=study-plan-v2&id=leetcode-75
 2352,Equal Row and Column Pairs,2023-05-23,00:07:33,Medium,0,https://leetcode.com/problems/equal-row-and-column-pairs/description/?envType=study-plan-v2&id=leetcode-75
+2542,Maximum Subsequence Score,2023-05-24,01:11:02,Medium,3,https://leetcode.com/problems/maximum-subsequence-score/submissions/
