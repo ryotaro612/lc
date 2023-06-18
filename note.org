@@ -1,3 +1,4 @@
+
 * Note
 
 #+NAME: scatter
@@ -27,7 +28,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:19:15 |
+|             00:18:49 |
 
 #+CALL: scatter("Medium")
 
