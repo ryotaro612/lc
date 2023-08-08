@@ -88,4 +88,5 @@ No,Title,Date,Time,Difficulty,# of unsuccessful attempts,URL
 1492,The kth Factor of n,2023-08-02,00:03:30,Medium,0,https://leetcode.com/problems/the-kth-factor-of-n/
 2534,Time Taken to Cross the Door,2023-08-03,00:45:00,Hard,0,https://leetcode.com/problems/time-taken-to-cross-the-door/?envType=study-plan-v2&envId=amazon-spring-23-high-frequency
 1676,Lowest Common Ancestor of a Binary Tree 4,2023-08-04,00:11:00,Medium,0,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description/?envType=study-plan-v2&envId=amazon-spring-23-high-frequency
-1151,Minimum Swaps to Group All 1's Together,2023-08-05,00:08:54,Medium,0,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/
+1151,Minimum Swaps to Group All 1's Together,2023-08-07,00:08:54,Medium,0,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/
+2519,Count the Number of K-Big Indices,2023-08-08,00:25:00,Medium,0,https://leetcode.com/problems/count-the-number-of-k-big-indices/description/?envType=study-plan-v2&envId=amazon-spring-23-high-frequency
