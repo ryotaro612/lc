@@ -39,7 +39,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:13:36 |
+|             00:29:18 |
 
 #+CALL: scatter("Hard")
 
