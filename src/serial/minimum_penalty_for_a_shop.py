@@ -1,4 +1,4 @@
-gclass Solution:
+class Solution:
     def bestClosingTime(self, customers: str) -> int:
       n_y = customers.count('Y')
       n = len(customers)
