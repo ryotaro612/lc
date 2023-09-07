@@ -4,7 +4,9 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
+    def splitListToParts(
+        self, head: Optional[ListNode], k: int
+    ) -> List[Optional[ListNode]]:
         n = 0
         node = head
         while node:
@@ -18,11 +20,11 @@ class Solution:
         for i in range(k):
             if node:
                 result.append(node)
-                for _ in range(n // k + (i < (n-n//k*k))):
+                for _ in range(n // k + (i < (n - n // k * k))):
                     prev = node
                     node = node.next
                 prev.next = None
             else:
                 result.append(None)
-        
+
         return result
