@@ -15,7 +15,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:03:59 |
+|             00:03:32 |
 
 #+CALL: scatter("Easy")
 
@@ -27,7 +27,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:19:15 |
+|             00:18:52 |
 
 #+CALL: scatter("Medium")
 
@@ -39,7 +39,7 @@
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:29:18 |
+|             00:40:00 |
 
 #+CALL: scatter("Hard")
 
