@@ -9,6 +9,7 @@ class Solution:
         memo = dict()
         result = self.build_tree(n, memo)
         return result
+
     def build_tree(self, n, memo):
         if n in memo:
             return memo[n]
@@ -29,4 +30,4 @@ class Solution:
                     root = TreeNode(0, left_tree, right_tree)
                     result.append(root)
         memo[n] = result
-        return memo[n]      
+        return memo[n]
