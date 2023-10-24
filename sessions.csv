@@ -132,3 +132,4 @@ No,Title,Date,Time,Difficulty,# of unsuccessful attempts,URL
 284,Peeking Iterator,2023-10-19,00:08:00,Medium,0,https://leetcode.com/problems/peeking-iterator/description/
 306,Additive Number,2023-10-20,00:50:51,Medium,1,https://leetcode.com/problems/additive-number/description/
 307,Range Sum Query - Mutable,2023-10-22,00:16:10,Medium,1,https://leetcode.com/problems/range-sum-query-mutable/description/
+515,Find Largest Value in Each Tree Row,2023-10-24,00:04:00,Medium,0,https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/?envType=daily-question&envId=2023-10-24
