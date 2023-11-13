@@ -22,3 +22,4 @@ class Solution:
             res_i = dp[res_i][1]
         return result
 
+a
