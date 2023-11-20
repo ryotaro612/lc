@@ -20,14 +20,14 @@
 #+CALL: scatter("Easy")
 
 #+RESULTS:
-[[file:./easy.png]]
+[[file:]]
 
 #+CALL: median("Medium")
 
 #+RESULTS:
 | Median(Elapsed time) |
 |----------------------|
-|             00:18:52 |
+|             00:18:03 |
 
 #+CALL: scatter("Medium")
 
