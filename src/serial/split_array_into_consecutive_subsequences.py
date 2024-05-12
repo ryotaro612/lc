@@ -20,4 +20,4 @@ class Solution:
                 need[num+3] += 1
             else:
                 return False
-        return True        
+        return True
