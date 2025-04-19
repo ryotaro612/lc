@@ -1,4 +1,4 @@
-import bisect
+
 class Solution:
     def countUnguarded(self, m: int, n: int, guards: List[List[int]], walls: List[List[int]]) -> int:
         grid = [[True] * n for _ in range(m)]
@@ -31,4 +31,4 @@ class Solution:
             grid[r][c] = grid[r][c] and ok
             r += d_r
             c += d_c
-        
+    
