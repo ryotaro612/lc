@@ -1,20 +1,14 @@
 class Solution:
     def numberOfArrays(self, differences: List[int], lower: int, upper: int) -> int:
-        hidden = [0]
-        
-        
+        prev = 0
+        mini = prev
+        maxi = prev
         for e in differences:
-            hidden.append(e + hidden[-1])
-
-        mini = min(hidden)
-        maxi = max(hidden)
-
-        if lower >= mini:
-            maxi += lower-mini
-        else: # < 
-            maxi -= mini - lower
+            new_e = prev + e
+            maxi = max(maxi, new_e)
+            mini = min(mini, new_e)
+            prev = new_e
         
-        if maxi <= upper:
-            return upper - maxi + 1
-        
-        return 0
+        maxi += lower - mini
+
+        return max(0, upper - maxi + 1)
