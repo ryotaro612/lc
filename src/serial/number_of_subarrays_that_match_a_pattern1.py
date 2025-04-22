@@ -5,20 +5,17 @@ class Solution:
         result = 0
         n = len(nums)
         m = len(pattern)
-        for i in range(n):
-            sub = nums[i:i+m+1]
-            if len(sub) < m + 1:
-                break
+        for i in range(n-m):
             
-            for i in range(m):
-                if pattern[i] == 1:
-                    if not sub[i+1] > sub[i]:
+            for k in range(m):
+                if pattern[k] == 1:
+                    if not nums[i+k+1] > nums[i+k]:
                         break
-                elif pattern[i] == 0:
-                    if sub[i+1] != sub[i]:
+                elif pattern[k] == 0:
+                    if nums[i+k+1] != nums[i+k]:
                         break
                 else:
-                    if not sub[i+1] < sub[i]:
+                    if not nums[i+k+1] < nums[i+k]:
                         break
             else:
                 result += 1
