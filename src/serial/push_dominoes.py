@@ -25,7 +25,3 @@ class Solution:
                 updates.append(i)
             
         return ''.join(result)
-
-             
-
-
