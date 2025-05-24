@@ -16,17 +16,12 @@ class Solution:
         heap = [(-nums[0], 0)]
 
         for i in range(1, n):
-            while True:
-                score, pos = heap[0]
-                score = -score
-                if i - pos <= k:
-                    next_score = nums[i] + score
-                    if i == n - 1:
-                        return next_score
-
-                    heapq.heappush(heap, (-next_score, i))
-                    break
-                else:
-                    heapq.heappop(heap)
+            while i - heap[0][1] > k:
+                heapq.heappop(heap)
             
+            next_score = nums[i] - heap[0][0]
+            if i == n - 1:
+                return next_score
+            heapq.heappush(heap, (-next_score, i))
             
+                        
