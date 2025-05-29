@@ -26,4 +26,5 @@ class Solution:
             if w <= pivot and succ not in visit:
                 visit.add(succ)
                 self.check(g, succ, visit, pivot)
-    
+
+                
