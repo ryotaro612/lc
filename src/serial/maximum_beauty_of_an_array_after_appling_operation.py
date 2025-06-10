@@ -1,26 +1,15 @@
 class Solution:
     def maximumBeauty(self, nums: List[int], k: int) -> int:
-        """
-        prefix[i] # of nums[i]
-        0<= prefix[i] <= max(nums) + k
-
-        prefix[nums[i]-k] += 1
-        prefix[nums[i]+k + 1] -= 1
-
-        prefix[i] += prefix[i-1]
-
-        max(prefix)
-        
-        """
+        nums.sort()
+        right = 0
         n = len(nums)
-        maxi = max(nums)
-        prefix = [0] * (maxi + k + 2)
+        result = 0
+        for left in range(n):
+            right = max(right, left)
+            while right < n and nums[left] + k >= nums[right] - k:
+                right += 1
+            
+            
+            result = max(result, right - left)
         
-        for num in nums:
-            prefix[max(num-k, 0)] += 1
-            prefix[num+k+1] -= 1
-        
-        for i in range(1, len(prefix)):
-            prefix[i] += prefix[i-1]
-    
-        return max(prefix)
+        return result
