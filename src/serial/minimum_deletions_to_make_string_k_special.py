@@ -2,21 +2,19 @@ from collections import Counter
 import math
 class Solution:
     def minimumDeletions(self, word: str, k: int) -> int:
-        counter = Counter(word)
-        freqs = sorted([f for f in counter.values()])
-
-        result = math.inf
+        counter =Counter(word)
+        freqs = list(counter.values())
         n = len(freqs)
-        right = 0
-        total = sum(freqs)
-        count = 0
+        
+        result = math.inf
+        for i in range(n):
+            deleted = 0
+            for j in range(n):
+                if freqs[i] < freqs[j]:
+                    deleted += max(0, freqs[j] - (freqs[i] + k))
+                elif freqs[j] < freqs[i]:
+                    deleted += freqs[j]
 
-        for left in range(n):
-            right = max(right, left)
-            while right < n and freqs[right] - freqs[left] <= k:
-                count += freqs[right]
-                right += 1
-            
-            result = min(result, total - (count + (n-right) * (freqs[left]+k)))
-            count -= freqs[left]
+            result = min(result, deleted)
+        
         return result
