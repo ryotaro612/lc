@@ -1,36 +1,18 @@
 from collections import Counter
 class Solution:
     def maximumSetSize(self, nums1: List[int], nums2: List[int]) -> int:
-        counter1 = Counter(nums1)
-        counter2 = Counter(nums2)
+        set1 = set(nums1)
+        set2 = set(nums2)
 
+        uniq1 = {num for num in nums1 if num not in set2}
+        uniq2 = {num for num in nums2 if num not in set1}
+
+        result = 0
         n = len(nums1)
+        n1 = min(n//2, len(uniq1))
+        n2 = min(n//2, len(uniq2))
+        result = n1 + n2
 
-        s = set()
-        n_selected1 = 0
-        for num in counter1:
-            if num not in counter2 and n_selected1 < n // 2:
-                s.add(num)
-                counter1[num] -= 1
-                n_selected1 += 1
-        
-        n_selected2 = 0
-        for num in counter2:
-            if num not in counter1 and n_selected2 < n // 2:
-                s.add(num)
-                n_selected2 += 1
-                counter2[num] -= 1
-        
-        for num in counter1:
-            if num not in s and counter1[num] and n_selected1 < n // 2:
-                s.add(num)
-                counter1[num] -= 1
-                n_selected1 += 1
-        
-        for num in counter2:
-            if num not in s and counter2[num] and n_selected2 < n // 2:
-                s.add(num)
-                n_selected2 += 1
-                counter2[num] -= 1
-        
-        return len(s)
+        inter = set1 & set2
+
+        return result + min(len(inter), n//2 - n1 + n//2 - n2)
