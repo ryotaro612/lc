@@ -16,5 +16,3 @@ class Solution:
         k = pos_ones[n_ones//3*2] - pos_ones[n_ones//3*2 -1]
 
         return m * k % mod
-
-        
