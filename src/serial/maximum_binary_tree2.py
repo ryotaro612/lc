@@ -6,24 +6,15 @@
 #         self.right = right
 class Solution:
     def insertIntoMaxTree(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
-        ary = self.restore(root) + [val]
-        return self.construct(ary)
-
-    def construct(self, ary):
-        if len(ary) == 0:
-            return None
-
-        maxi = max(ary)
-        n = len(ary)
-        for i in range(n):
-            if maxi == ary[i]:
-                left = self.construct(ary[:i])
-                right = self.construct(ary[i+1:])
-                return TreeNode(maxi, left, right)
-
-
-    def restore(self, node):
+        return self.put(root, val)
+    
+    def put(self, node, val):
         if node is None:
-            return []
+            return TreeNode(val)
+        
+        if node.val < val:
+            return TreeNode(val, node, None)        
 
-        return self.restore(node.left) + [node.val] + self.restore(node.right)
+        # node.val > val
+        node.right = self.put(node.right, val)
+        return node
