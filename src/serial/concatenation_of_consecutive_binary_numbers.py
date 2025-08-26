@@ -22,4 +22,4 @@ class Solution:
                 shift *= 2
                 shift %= mod
                 
-        return result    
+        return result
